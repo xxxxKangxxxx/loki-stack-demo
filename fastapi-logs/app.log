@@ -1,0 +1,174 @@
+2025-04-01 03:08:57,312 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:08:57,313 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:08:57,314 - fastapi-app - INFO - Request complete: GET / - Took: 0.0020s
+2025-04-01 03:09:04,223 - fastapi-app - INFO - Request started: GET /health
+2025-04-01 03:09:04,225 - fastapi-app - INFO - Health check endpoint called
+2025-04-01 03:09:04,226 - fastapi-app - INFO - Request complete: GET /health - Took: 0.0026s
+2025-04-01 03:09:11,262 - fastapi-app - INFO - Request started: GET /error
+2025-04-01 03:09:11,262 - fastapi-app - ERROR - Error endpoint called - Generating sample error
+2025-04-01 03:09:11,263 - fastapi-app - INFO - Request complete: GET /error - Took: 0.0012s
+2025-04-01 03:15:05,315 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:15:05,317 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:15:05,319 - fastapi-app - INFO - Request complete: GET / - Took: 0.0048s
+2025-04-01 03:15:09,501 - fastapi-app - INFO - Request started: GET /health
+2025-04-01 03:15:09,502 - fastapi-app - INFO - Health check endpoint called
+2025-04-01 03:15:09,502 - fastapi-app - INFO - Request complete: GET /health - Took: 0.0018s
+2025-04-01 03:15:13,693 - fastapi-app - INFO - Request started: GET /error
+2025-04-01 03:15:13,694 - fastapi-app - ERROR - Error endpoint called - Generating sample error
+2025-04-01 03:15:13,695 - fastapi-app - INFO - Request complete: GET /error - Took: 0.0019s
+2025-04-01 03:37:53,882 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:53,884 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:53,885 - fastapi-app - INFO - Request complete: GET / - Took: 0.0027s
+2025-04-01 03:37:53,913 - fastapi-app - INFO - Request started: GET /favicon.ico
+2025-04-01 03:37:53,914 - fastapi-app - INFO - Request complete: GET /favicon.ico - Took: 0.0009s
+2025-04-01 03:37:55,765 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:55,766 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:55,766 - fastapi-app - INFO - Request complete: GET / - Took: 0.0019s
+2025-04-01 03:37:56,154 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:56,154 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:56,155 - fastapi-app - INFO - Request complete: GET / - Took: 0.0010s
+2025-04-01 03:37:57,487 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:57,488 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:57,490 - fastapi-app - INFO - Request complete: GET / - Took: 0.0025s
+2025-04-01 03:37:57,984 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:57,986 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:57,988 - fastapi-app - INFO - Request complete: GET / - Took: 0.0043s
+2025-04-01 03:37:58,537 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:58,537 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:58,538 - fastapi-app - INFO - Request complete: GET / - Took: 0.0014s
+2025-04-01 03:37:58,938 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:58,939 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:58,941 - fastapi-app - INFO - Request complete: GET / - Took: 0.0027s
+2025-04-01 03:37:59,337 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:59,338 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:59,339 - fastapi-app - INFO - Request complete: GET / - Took: 0.0023s
+2025-04-01 03:37:59,544 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:59,545 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:59,545 - fastapi-app - INFO - Request complete: GET / - Took: 0.0018s
+2025-04-01 03:37:59,691 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:59,691 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:59,692 - fastapi-app - INFO - Request complete: GET / - Took: 0.0009s
+2025-04-01 03:37:59,841 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:59,842 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:59,842 - fastapi-app - INFO - Request complete: GET / - Took: 0.0011s
+2025-04-01 03:37:59,991 - fastapi-app - INFO - Request started: GET /
+2025-04-01 03:37:59,992 - fastapi-app - INFO - Root endpoint called
+2025-04-01 03:37:59,993 - fastapi-app - INFO - Request complete: GET / - Took: 0.0015s
+2025-04-01 05:37:23,491 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:37:23,494 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0039s
+2025-04-01 05:38:13,924 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:38:13,925 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0011s
+2025-04-01 05:39:54,997 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:39:54,998 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0012s
+2025-04-01 05:40:19,237 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:40:19,239 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0017s
+2025-04-01 05:41:24,130 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:41:24,131 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0018s
+2025-04-01 05:42:03,425 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:42:03,426 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0013s
+2025-04-01 05:42:45,816 - fastapi-app - INFO - Request started: GET /error
+2025-04-01 05:42:45,817 - fastapi-app - ERROR - Error endpoint called - Generating sample error
+2025-04-01 05:42:45,818 - fastapi-app - INFO - Request complete: GET /error - Took: 0.0018s
+2025-04-01 05:46:12,530 - fastapi-app - INFO - Request started: GET /
+2025-04-01 05:46:12,531 - fastapi-app - INFO - Root endpoint called
+2025-04-01 05:46:12,532 - fastapi-app - INFO - Request complete: GET / - Took: 0.0022s
+2025-04-01 05:46:19,412 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 05:46:19,414 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0019s
+2025-04-01 05:46:19,517 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 05:46:19,519 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0023s
+2025-04-01 05:46:26,976 - fastapi-app - INFO - Request started: GET /error
+2025-04-01 05:46:26,977 - fastapi-app - ERROR - Error endpoint called - Generating sample error
+2025-04-01 05:46:26,978 - fastapi-app - INFO - Request complete: GET /error - Took: 0.0018s
+2025-04-01 05:47:25,255 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 05:47:25,257 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0016s
+2025-04-01 05:47:25,301 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 05:47:25,304 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0027s
+2025-04-01 05:47:26,691 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 05:47:26,693 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0017s
+2025-04-01 05:47:26,722 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 05:47:26,722 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0006s
+2025-04-01 05:48:49,347 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 05:48:49,348 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0016s
+2025-04-01 05:48:49,381 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 05:48:49,383 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0019s
+2025-04-01 05:48:50,533 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 05:48:50,537 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0039s
+2025-04-01 05:48:50,563 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 05:48:50,564 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0010s
+2025-04-01 05:54:23,045 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 05:54:23,046 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0014s
+2025-04-01 05:59:34,649 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 05:59:34,651 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0013s
+2025-04-01 05:59:34,684 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 05:59:34,685 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0019s
+2025-04-01 06:01:50,966 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 06:01:50,968 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0015s
+2025-04-01 06:01:51,005 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 06:01:51,007 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0020s
+2025-04-01 06:11:16,215 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 06:11:16,216 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0013s
+2025-04-01 06:11:16,247 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 06:11:16,248 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0007s
+2025-04-01 06:11:18,537 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 06:11:18,538 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0013s
+2025-04-01 06:11:18,575 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 06:11:18,576 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0008s
+2025-04-01 06:11:35,232 - fastapi-app - INFO - Request started: GET /error
+2025-04-01 06:11:35,234 - fastapi-app - ERROR - Error endpoint called - Generating sample error
+2025-04-01 06:11:35,235 - fastapi-app - INFO - Request complete: GET /error - Took: 0.0029s
+2025-04-01 06:11:41,369 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:11:41,370 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0017s
+2025-04-01 06:27:58,437 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 06:27:58,438 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0010s
+2025-04-01 06:27:58,470 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 06:27:58,472 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0024s
+2025-04-01 06:30:27,134 - fastapi-app - INFO - Request started: GET /docs
+2025-04-01 06:30:27,136 - fastapi-app - INFO - Request complete: GET /docs - Took: 0.0016s
+2025-04-01 06:30:27,172 - fastapi-app - INFO - Request started: GET /openapi.json
+2025-04-01 06:30:27,174 - fastapi-app - INFO - Request complete: GET /openapi.json - Took: 0.0023s
+2025-04-01 06:30:38,114 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:30:38,116 - fastapi-app - INFO - Calculation!!!
+2025-04-01 06:30:38,117 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0023s
+2025-04-01 06:31:42,086 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:31:42,088 - fastapi-app - INFO - Calculation!!!
+2025-04-01 06:31:42,088 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0019s
+2025-04-01 06:33:56,176 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:33:56,177 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0013s
+2025-04-01 06:34:35,711 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:34:35,712 - fastapi-app - INFO - Calc endpoint called: 10.0 add 5.0
+2025-04-01 06:34:35,712 - fastapi-app - INFO - Calculation result: 15.0
+2025-04-01 06:34:35,712 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0009s
+2025-04-01 06:35:51,620 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:35:51,621 - fastapi-app - INFO - Calc endpoint called: 20.0 sub 7.0
+2025-04-01 06:35:51,622 - fastapi-app - INFO - Calculation result: 13.0
+2025-04-01 06:35:51,623 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0026s
+2025-04-01 06:36:15,937 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:36:15,938 - fastapi-app - INFO - Calc endpoint called: 20.0 mul 7.0
+2025-04-01 06:36:15,938 - fastapi-app - INFO - Calculation result: 140.0
+2025-04-01 06:36:15,939 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0022s
+2025-04-01 06:36:21,649 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 06:36:21,650 - fastapi-app - INFO - Calc endpoint called: 20.0 div 7.0
+2025-04-01 06:36:21,651 - fastapi-app - INFO - Calculation result: 2.857142857142857
+2025-04-01 06:36:21,652 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0029s
+2025-04-01 07:07:09,606 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 07:07:09,609 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0039s
+2025-04-01 07:07:35,357 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 07:07:35,359 - fastapi-app - INFO - Calc endpoint called: 10.0 mul 4.3
+2025-04-01 07:07:35,360 - fastapi-app - INFO - Calculation result: 43.0
+2025-04-01 07:07:35,361 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0041s
+2025-04-01 07:13:26,278 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 07:13:26,279 - fastapi-app - INFO - Calc endpoint called: 10.0 mul 4.3
+2025-04-01 07:13:26,279 - fastapi-app - INFO - Calculation result: 43.0
+2025-04-01 07:13:26,280 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0024s
+2025-04-01 07:16:20,270 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 07:16:20,273 - fastapi-app - INFO - Calc endpoint called: 10.0 mal 4.3
+2025-04-01 07:16:20,274 - fastapi-app - WARNING - Invalid operation: mal
+2025-04-01 07:16:20,274 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0051s
+2025-04-01 07:16:32,613 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 07:16:32,616 - fastapi-app - INFO - Calc endpoint called: 10.0 mul 4.3
+2025-04-01 07:16:32,619 - fastapi-app - INFO - Calculation result: 43.0
+2025-04-01 07:16:32,619 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0061s
+2025-04-01 07:18:06,395 - fastapi-app - INFO - Request started: GET /calc
+2025-04-01 07:18:06,396 - fastapi-app - INFO - Calc endpoint called: 10.0 mul 4.3
+2025-04-01 07:18:06,396 - fastapi-app - INFO - Calculation result: 43.0
+2025-04-01 07:18:06,397 - fastapi-app - INFO - Request complete: GET /calc - Took: 0.0014s

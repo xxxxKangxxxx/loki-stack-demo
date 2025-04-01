@@ -1,0 +1,53 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /promtail/positions.yaml
+
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: fastapi-logs
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: fastapi
+          __path__: /var/log/fastapi/*.log
+    pipeline_stages:
+      - regex:
+          expression: '(?P<timestamp>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3})\s-\s(?P<logger>\w+)\s-\s(?P<level>\w+)\s-\s(?P<message>.*)'
+      - labels:
+          level:
+          logger:
+      - timestamp:
+          source: timestamp
+          format: '2006-01-02 15:04:05,000'
+
+  - job_name: nginx-access
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: nginx-access
+          __path__: /var/log/nginx/access.log
+    pipeline_stages:
+      - regex:
+          expression: '(?P<remote_addr>\S+) - (?P<remote_user>\S+) \[(?P<time_local>.*?)\] "(?P<request>.*?)" (?P<status>\d+) (?P<body_bytes_sent>\d+) "(?P<http_referer>.*?)" "(?P<http_user_agent>.*?)" "(?P<http_x_forwarded_for>.*?)"'
+      - labels:
+          status:
+          remote_addr:
+          request:
+      - timestamp:
+          source: time_local
+          format: '02/Jan/2006:15:04:05 -0700'
+
+  - job_name: nginx-error
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: nginx-error
+          __path__: /var/log/nginx/error.log
