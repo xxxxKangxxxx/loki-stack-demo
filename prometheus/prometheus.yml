@@ -1,0 +1,42 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+# Alertmanager 설정
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+
+# 알림 규칙 로드
+rule_files:
+  - "rules.yml"
+
+# 스크랩 설정
+scrape_configs:
+  # FastAPI 애플리케이션 메트릭 (기존 앱)
+  - job_name: "fastapi"
+    metrics_path: "/metrics"  # Prometheus 클라이언트 기본 경로
+    static_configs:
+      - targets: ["fastapi:8000"]
+
+  # 부하 테스트 애플리케이션 메트릭 (새 앱)
+  - job_name: "load-test-app"
+    static_configs:
+      - targets: ["load-test-app:5000"]
+
+  # Prometheus 자체 메트릭
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # cAdvisor 컨테이너 메트릭
+  - job_name: "cadvisor"
+    static_configs:
+      - targets: ["cadvisor:8080"]
+
+  # Node Exporter 시스템 메트릭
+  - job_name: "node"
+    static_configs:
+      - targets: ["node-exporter:9100"]

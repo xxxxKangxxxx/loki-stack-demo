@@ -1,4 +1,4 @@
 positions:
-  /var/log/fastapi/app.log: "14155"
-  /var/log/nginx/access.log: "12078"
+  /var/log/fastapi/app.log: "479429"
+  /var/log/nginx/access.log: "30763"
   /var/log/nginx/error.log: "0"

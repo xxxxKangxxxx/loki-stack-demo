@@ -2,41 +2,70 @@ import logging
 import time
 from fastapi import FastAPI, Request
 from datetime import datetime
+from prometheus_client import Counter, Histogram, make_asgi_app
 
-# 로깅 설정 
+# 로깅 설정
 logging.basicConfig(
-    level=logging.INFO, # info 레벨 이상의 로그만 출력 
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", # 로그 출력 형식 설정 
-    handlers=[ # 로그가 저장될 위치 지정 
-        logging.FileHandler("/var/log/fastapi/app.log"), # 해당 파일로 로그 기록 
-        logging.StreamHandler() # 터미널/콘솔에도 로그 출력 
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("/var/log/fastapi/app.log"),
+        logging.StreamHandler()
     ]
 )
 
-logger = logging.getLogger("fastapi-app") # 해당 이름의 로거 생성 
+logger = logging.getLogger("fastapi-app")
 
-app = FastAPI() # fastapi로 서버 인스턴스 생성 
+app = FastAPI()
 
-@app.middleware("http") # 모든 http 요청을 받는 미들웨어 
+# Prometheus 메트릭 설정
+REQUEST_COUNT = Counter(
+    "fastapi_requests_total",
+    "Total FastAPI HTTP requests",
+    ["method", "endpoint", "status"]
+)
+REQUEST_LATENCY = Histogram(
+    "fastapi_request_latency_seconds",
+    "FastAPI request latency in seconds",
+    ["method", "endpoint"]
+)
+
+# Prometheus 메트릭 엔드포인트 추가
+metrics_app = make_asgi_app()
+app.mount("/metrics", metrics_app)
+
+@app.middleware("http")
 async def log_requests(request: Request, call_next):
     start_time = time.time()
 
-    # 요청 로깅 
+    # 요청 로깅
     logger.info(f"Request started: {request.method} {request.url.path}")
 
     response = await call_next(request)
 
-    # 응답 시간 계산 
+    # 응답 시간 계산
     process_time = time.time() - start_time
-    logger.info(f"Request complete: {request.method} {request.url.path} - Took: {process_time:.4f}s")
+    logger.info(f"Request completed: {request.method} {request.url.path} - Took: {process_time:.4f}s")
+
+    # Prometheus 메트릭 기록
+    # /metrics 엔드포인트는 제외
+    if not request.url.path.startswith("/metrics"):
+        REQUEST_COUNT.labels(
+            method=request.method,
+            endpoint=request.url.path,
+            status=response.status_code
+        ).inc()
+        REQUEST_LATENCY.labels(
+            method=request.method,
+            endpoint=request.url.path
+        ).observe(process_time)
 
     return response
-
 
 @app.get("/")
 async def root():
     logger.info("Root endpoint called")
-    return {"message": "Hello world"}
+    return {"message": "Hello World"}
 
 @app.get("/health")
 async def health():
@@ -46,7 +75,6 @@ async def health():
 @app.get("/error")
 async def trigger_error():
     logger.error("Error endpoint called - Generating sample error")
-
     return {"error": "This is a sample error log message"}
 
 @app.get("/calc")

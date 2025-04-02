@@ -1,0 +1,32 @@
+groups:
+  - name: app_alerts
+    rules:
+      # 높은 메모리 사용량 알림
+      - alert: HighMemoryUsage
+        expr: load_app_memory_usage_bytes > 100000000  # 100MB
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "App memory usage is {{ $value | humanize }} bytes"
+
+      # 높은 CPU 사용량 알림
+      - alert: HighCpuUsage
+        expr: load_app_cpu_usage_percent > 80
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "App CPU usage is {{ $value }}%"
+
+      # 느린 응답 시간 알림
+      - alert: SlowResponseTime
+        expr: rate(load_app_request_latency_seconds_sum[5m]) / rate(load_app_request_latency_seconds_count[5m]) > 1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Slow response time detected"
+          description: "Average response time is {{ $value }} seconds"
